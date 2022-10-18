@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cadastro | Biblioteca</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/css">
+        html,
+:root {
+  height: 100%;
+}
+input {
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  background: linear-gradient(180deg, #fe8c00 0%, #f83600 100%);
+  background-size: 100%;
+  margin: 0;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+#formulario {
+  width: 500px;
+  min-height: 400px;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 30px;
+}
+#formulario legend {
+  color: #f94d00;
+  font-weight: bold;
+  text-align: center;
+  margin: 5px 0;
+  font-size: 22px;
+}
+.input-group {
+  margin: 10px 0;
+}
+.input-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #393939;
+  cursor: pointer;
+}
+
+.input-group input:not([type="checkbox"]) {
+  background: #dedddd;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  padding: 8px 10px;
+  display: block;
+  width: 100%;
+}
+.input-group input:focus {
+  border-color: #20b2aa;
+}
+
+.input-group input::placeholder {
+  color: #686868;
+  font-weight: 300;
+}
+.colunas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.colunas .input-group {
+  width: 48%;
+}
+.footer {
+  text-align: center;
+}
+.botao {
+  background: #73a4dc;
+  border-radius: 2px;
+  padding: 10px 15px;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.botao:hover {
+  background: #5988bd;
+}
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Formulário -->
+      <form action="" id="formulario" method="POST">
+        <legend>
+          Cadastro Biblioteca
+        </legend>
+        <div class="input-group">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" placeholder="Insira seu nome" />
+        </div>
+        <div class="input-group">
+          <label for="sobrenome">Sobrenome:</label>
+          <input
+            type="text"
+            id="sobrenome"
+            placeholder="Insira seu sobrenome"
+          />
+        </div>
+        <div class="input-group">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" placeholder="Insira seu e-mail" />
+        </div>
+        <div class="input-group">
+          <label for="senha">Senha:</label>
+          <input type="password" id="senha" placeholder="Insira a senha" />
+        </div>
+        <div class="colunas">
+          <div class="input-group">
+            <label for="telefone">Telefone:</label>
+            <input
+              type="text"
+              id="telefone"
+              placeholder="Insira seu Telefone"
+            />
+          </div>
+          <div class="input-group">
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" placeholder="Insira seu CEP" />
+          </div>
+        </div>
+        <div class="colunas">
+          <div class="input-group">
+            <label for="sexo">Sexo:</label>
+            <select name="sexo" id="sexo">
+              <option value="">informar...</option>
+              <option value="m">Masculino</option>
+              <option value="f">Feminino</option>
+              <option value="x">Não informar</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="newsletter">Newsletter</label>
+            <input type="checkbox" id="newsletter" />
+            <small>Desejo receber novidades</small>
+          </div>
+        </div>
+        <div class="footer">
+          <button type="button" class="botao">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
